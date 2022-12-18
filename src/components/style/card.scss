@@ -16,6 +16,10 @@
     & > .card-desc{
         letter-spacing: 0.03rem;
         
+        & > p{
+            margin-bottom: 0.3rem;
+        }
+        
     }
 
     & > .card-inter{

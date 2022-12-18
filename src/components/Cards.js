@@ -125,16 +125,16 @@ const Cards = () => {
             <h1>NEW AT MUSCLE & STRENGTH</h1>
         </div>
         <div className='cards-container'>
-            {articles1.map(({image,title,desc,reads,comments}) => <Card key={image} img={image} title={title} desc={desc} reads={reads} comments={comments} />
-            
+            {articles1.map(({image,title,desc,reads,comments}) => <><Card key={image} img={image} title={title} desc={desc} reads={reads} comments={comments} />
+            <hr size="1" /></>
             )}
         </div>
         <div className='card-title'>
             <h1>TRENDING IN ARTICLES</h1>
         </div>
         <div className='cards-container'>
-            {articles2.map(({image,title,desc,reads,comments}) => <Card key={image} img={image} title={title} desc={desc} reads={reads} comments={comments} />
-
+          {articles2.map(({image,title,desc,reads,comments}) => <><Card key={image} img={image} title={title} desc={desc} reads={reads} comments={comments} />
+            <hr /></>
             )}
         </div>
     </div>

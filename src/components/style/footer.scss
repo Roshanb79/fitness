@@ -5,6 +5,7 @@
     background-color: #0687e6;
 
     & > .footer-contact{
+        padding:0 2px;
         letter-spacing: 0.1rem;
         
         color: white;
@@ -68,6 +69,7 @@
     }
     & > .footer{
         background-color: #005599;
+        padding:0 2px;
         
 
         & > .footer-inner-container{
@@ -120,7 +122,7 @@
         background-color: #004780;
         display: flex;
         justify-content: center;
-        padding:2rem 0;
+        padding:2rem 2px;
         color: white;
         
         & > p{

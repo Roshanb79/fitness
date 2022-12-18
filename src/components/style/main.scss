@@ -1,0 +1,211 @@
+/* @media only screen and (max-width: 600px){
+    
+}
+@media only screen and (min-width: 601px) and (max-width:1000px){
+
+} */
+
+.main{
+    width: auto;
+    height: 50vh;
+    min-height: 829px;
+    overflow: hidden;
+    
+
+    & > img{
+        margin-top: -6rem;
+        width: 100%;
+        height:130%;
+        
+    }
+}
+
+.main-overlay{
+    background-color: rgba(0,0,0,0.5);
+    position: absolute;
+    top:0;
+    left:0;
+    bottom: 0;
+    right:0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    & > h1{
+        text-align: center;
+        color: white;
+        font-size: 4.5rem;
+        margin: 0;
+    }
+    & > p{
+        max-width: 600px;
+        font-size: 2rem;
+        text-align: center;
+        color:white;
+    }
+    & >a {
+        & > .main-learnMore-btn{
+            cursor: pointer;
+            background-color: rgba(0,85,153,0);
+            font-size: 1.5rem;
+            color: white;
+            width: 10rem;
+            height: 3.5rem;
+            background-image: linear-gradient(#0063b3,#004780);
+            text-shadow: 1px 1px 0 #004780;
+            border: 1px solid #004a85;
+            transition: background-image 2s ease;
+        }
+        & > .main-learnMore-btn:hover{
+            background-image:none;
+        }
+    }
+}
+
+.main-nav-container{
+    width: 100%;
+
+    & > .main-navs{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        
+        & > a{
+            text-decoration: none;
+            color: #059;
+            padding: 1rem 0;
+            flex:1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            & > .main-nav {
+                text-align: center;
+                & > svg{
+                    height: 3rem;
+                    width: 3rem;
+                }
+                & > p{
+                    font-size: 1rem;
+                    text-align: center;
+                    margin: 0;
+                    color:#aaa;
+                }
+
+            }
+           
+            
+        }
+        & > a:hover{
+            background-color: antiquewhite;
+        }
+    }
+}
+
+
+.mobilead2{
+    display: none;
+}
+
+.desktopad2{
+    padding: 3rem 0;
+    display: flex;
+    justify-content: center;
+    width:100%;
+    height:auto;
+    & > img{
+        max-width: 1300px;
+        height: 100%;
+        width: 100%;
+    }
+}
+
+
+// Media Queries -----------------------------
+
+@media only screen and (max-width: 600px){
+    .main{
+        height: 40vh;
+        min-height: 400px;
+    }
+    .main-overlay{
+    
+        & > h1{
+            font-size: 1.5rem;
+        }
+        & > p{
+            max-width: 17.5rem;
+            font-size: 1rem;
+        }
+        & >a {
+
+            & > .main-learnMore-btn{
+                font-size: 1.2rem;
+                color: white;
+                width: 8rem;
+                height: 3rem;
+            }
+        }
+    }
+    .mobilead2{
+        padding: 2rem 0;
+        display: flex;
+        width:100%;
+        height:auto;
+        & > img{
+            height: 100%;
+            width: 100%;
+        }
+    }
+    .desktopad2{
+        display: none;
+    }
+    .main-nav-container{
+
+        & > .main-navs{
+            & > a{
+                & > .main-nav {
+                    text-align: center;
+                    & > svg{
+                        height: 2rem;
+                        width: 2rem;
+                    }
+                    & > p{
+                        font-size: 0.7rem;
+                        text-align: center;
+                        margin: 0;
+                        color:#aaa;
+                    }
+    
+                }   
+            }
+        }
+    }
+}
+@media only screen and (min-width: 601px) and (max-width:1000px){
+    .main{
+        min-height: 650px;
+    }
+
+    .main-overlay{
+    
+        & > h1{
+            font-size: 3.5rem;
+        }
+        & > p{
+            font-size: 1.5rem;
+        }
+    }
+    .mobilead2{
+        padding: 2rem 0;
+        display: flex;
+        height:auto;
+        & > img{
+            height: 100%;
+            width: 100%;
+        }
+    }
+    .desktopad2{
+        display: none;
+    }
+}
